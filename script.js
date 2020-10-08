@@ -6,7 +6,7 @@ $('#search-city').on("click", function () {
 var searchValue = $("#search-city").val();
 
   // Get API  & API Key
-  var queryURL =  "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=appid=5d32c3c46f4249ead84cbc22d3498938";
+  var queryURL =  "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=appid=924064a95edd0c1c942e4fa79c7d8039";
 
 
   //Ajax GET request to our queryURL 
