@@ -8,7 +8,7 @@ var searchValue = $("#search-value").val();
   var queryURL =  "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&APPID=5d32c3c46f4249ead84cbc22d3498938";
 
 
-  //Ajax GET request to our queryURL 
+  
   $.ajax({
     type: "GET",
     url: queryURL,
