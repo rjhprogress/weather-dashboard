@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 //On click for 
 $('#search-button').on("click", function () {

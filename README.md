@@ -16,5 +16,3 @@ The technologies used in this application are:
 - jQuery
 - AJAX
 - Localstorage
-
-
