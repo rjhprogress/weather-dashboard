@@ -6,6 +6,9 @@
     <script src="jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       
@@ -34,10 +37,14 @@
       <h2>Search for a City:</h2>
       <!--Beginning of user input data for City Search HTML Section -->
       <div id="search-form">
-        <input type="text" placeholder="Type City Here.." id="search-city" name="city">
-        <button class="btn btn-primary" type="submit">Search</button>
+        <input type="text" placeholder="Type City Here.." id="search-value"  name="city">
+        <button class="btn btn-primary" id="search-button" type="submit">Search</button>
        </div>
        </div>
+       <div class="col-lg-9">
+        <div id="today" class="mt-3"></div>
+        <div id="forecast" class="mt-3"></div>
+      </div>
       </div>
         
      </div>
@@ -77,67 +84,6 @@
 
 
 
-
-<div class="container">
-  <!-- 5-Day Forecast HTMLSection -->
- <div class="col-xs-12 col-md-8">     
-    <h2>5-Day Forcast:</h2>
-  </div>
-     
-  <div class="card-group">
-    <!--Day 1-->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title" id="date">Card title</h5>
-        <img class="card-img-top" src="" alt="Card image cap">
-        <p class="card-text" id="temp">Temp: </p>
-        <p class="card-text" id="humidity"><small class="text-muted">Humidity</small></p>
-      </div>
-    </div>
-
-    <!--Day 2-->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title" id="date">Card title</h5>
-        <img class="card-img-top" src="" alt="Card image cap">
-        <p class="card-text" id="temp">Temp: </p>
-        <p class="card-text" id="humidity"><small class="text-muted">Humidity</small></p>
-      </div>
-    </div>
-
-    <!--Day 3-->
-  <div class="card">
-  <div class="card-body">
-    <h5 class="card-title" id="date">Card title</h5>
-    <img class="card-img-top" src="" alt="Card image cap">
-    <p class="card-text" id="temp"> Temp:</p>
-    <p class="card-text" id="humidity"><small class="text-muted">Humidity</small></p>
-  </div>
-  </div>
-
-    <!--Day 4-->
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title" id="date">Card title</h5>
-      <img class="card-img-top" src="" alt="Card image cap">
-      <p class="card-text" id="temp">Temp: </p>
-      <p class="card-text" id="humidity"><small class="text-muted">Humidity</small></p>
-    </div>
-    </div>
-
-     <!--Day 5-->
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title" id="date">Card title</h5>
-      <img class="card-img-top" src="" alt="Card image cap">
-      <p class="card-text" id="temp">Temp: </p>
-      <p class="card-text" id="humidity"><small class="text-muted">Humidity</small></p>
-    </div>
-    </div>
-    
-  </div>
-</div>
-<!-- End of 5-Day Forecast HTML Section -->
 
 
 
