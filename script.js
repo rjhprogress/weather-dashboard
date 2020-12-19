@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  const cities = JSON.parse(window.localStorage.getItem("history"))||[]; 
+  console.log (cities)
+
+  for (var x = 0; x < cities.length; x++) {
+    var city = $("<p>").addClass("city").text(cities[x]);
+    $('#saveHistory').append(city)
+  }
 //On click for 
 $('#search-button').on("click", function () {
 
@@ -6,8 +13,7 @@ var searchValue = $("#search-value").val();
 
   // Get API  & API Key
   var queryURL =  "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&APPID=5d32c3c46f4249ead84cbc22d3498938";
-
-
+ 
   
   $.ajax({
     type: "GET",
@@ -15,11 +21,12 @@ var searchValue = $("#search-value").val();
     dataType: "json",
     success: function(data) {
       // create history link for this search
-      alert(JSON.stringify(data));
+     console.log(data);
    // create history link for this search
   //  if (history.indexOf(searchValue) === -1) {
   //   history.push(searchValue);
-  //   window.localStorage.setItem("history", JSON.stringify(history));
+    cities.push(data.name)
+    window.localStorage.setItem("history", JSON.stringify(cities)); 
 
   //   makeRow(searchValue);
   // }
@@ -29,7 +36,8 @@ var searchValue = $("#search-value").val();
 
       // create html content for current weather
 
-      var title = $("<h3>").addClass("card-title").text(data.name + " (" + new Date().toLocaleDateString() + ")");
+     
+     var title = $("<h3>").addClass("card-title").text(data.name + " (" + new Date().toLocaleDateString() + ")");
       var card = $("<div>").addClass("card");
       var wind = $("<p>").addClass("card-text").text("Wind Speed: " + data.wind.speed + " MPH");
       var humid = $("<p>").addClass("card-text").text("Humidity: " + data.main.humidity + "%");
@@ -131,11 +139,13 @@ function getUVIndex(lat, lon) {
 // get current history, if any
 var history = JSON.parse(window.localStorage.getItem("history")) || [];
 
-if (history.length > 0) {
+/* if (history.length > 0) {
   searchWeather(history[history.length-1]);
 }
 
 for (var i = 0; i < history.length; i++) {
   makeRow(history[i]);
 }
+*/
+
 });
