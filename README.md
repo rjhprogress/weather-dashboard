@@ -1,8 +1,8 @@
 # Weather Dashboard
 
-Weather dashboard with city search for multiple cities to assist travelors with planning accordingly.
+Weather dashboard with city search for multiple cities to assist travelers with planning accordingly.
 
-Dashboard presents current and future weather conditions. Includes a 5-day forcast, displaying
+Dashboard presents current and future weather conditions. Includes a 5-day forecast, displaying
 city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index.
 
 How To Start: Search a city inside of the search box provided. To save results and search for another city, refresh the page.
